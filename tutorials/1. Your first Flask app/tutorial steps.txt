@@ -1,0 +1,86 @@
+# Pythonise Tutorial
+# Your first Flask app | Learning Flask Ep. 1
+# https://pythonise.com/series/learning-flask/your-first-flask-app
+# https://www.youtube.com/watch?v=BUmUV8YOzgM&list=PLF2JzgCW6-YY_TZCmBrbOpgx5pSNBD0_L&index=1
+
+# sh cancelled - manually execute the commands below in terminal
+# (!! in OS terminal, not in Visual Code terminal)
+
+# cancelled/Given
+# cancelled/make sure setup.sh exists in this directory/folder
+
+# cancelled/Then:
+# cancelled/sudo chmod u+x setup.command 
+# cancelled/sh setup.sh
+
+# Create app dir
+mkdir app
+cd app
+
+# create out Python virtual environment
+python3 -m venv venv
+
+# activate the environment:
+source venv/bin/activate
+
+# Updating pip
+pip install --upgrade pip
+
+# Collecting pip
+#   Using cached https://files.pythonhosted.org/packages/54/eb/4a3642e971f404d69d4f6fa3885559d67562801b99d7592487f1ecc4e017/pip-20.3.3-py2.py3-none-any.whl
+# Installing collected packages: pip
+#   Found existing installation: pip 19.2.3
+#     Uninstalling pip-19.2.3:
+#       Successfully uninstalled pip-19.2.3
+# Successfully installed pip-20.3.3
+
+# Installing Flask
+pip install -U flask
+
+pip list
+# Package      Version
+# ------------ -------
+# click        7.1.2
+# Flask        1.1.2
+# itsdangerous 1.1.0
+# Jinja2       2.11.2
+# MarkupSafe   1.1.1
+# pip          20.3.3
+# setuptools   41.2.0
+# Werkzeug     1.0.1
+
+# Creating an empty Flask app
+touch app.py
+
+list# start visual code
+code .
+
+# edit app.py (see instructions video or 
+
+# To run the app server:
+python app.py
+
+#  * Serving Flask app "app" (lazy loading)
+#  * Environment: production
+#    WARNING: This is a development server. Do not use it in a production deployment.
+#    Use a production WSGI server instead.
+#  * Debug mode: off
+#  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+
+# other way to run the server:
+export FLASK_APP=app.py
+export FLASK_ENV=development
+flask run
+
+# * Serving Flask app "app.py" (lazy loading)
+# * Environment: development
+# * Debug mode: on
+# * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+# * Restarting with stat
+# * Debugger is active!
+# * Debugger PIN: 171-293-950
+
+# quit virtual env
+# deactivate
+
+

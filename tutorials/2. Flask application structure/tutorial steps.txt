@@ -1,0 +1,66 @@
+# Pythonise Tutorial:
+# Flask application structure | Learning Flask Ep. 2
+# https://pythonise.com/series/learning-flask/flask-application-structure
+# https://www.youtube.com/watch?v=-BC3V1CUKpU
+
+# activate the environment:
+source venv/bin/activate
+
+# start visual code
+code .
+
+# run server
+flask run
+
+# stop server
+# press ctrl + c
+
+# create
+# app/app/__init__.py
+# app/app/views.py
+# rename app/app.py > app/run.py
+
+# in visual code: 
+# edit __init__.py
+# edit views.py
+# edit app/run.py
+
+# update env. variables:
+export FLASK_APP=run.py
+export FLASK_ENV=development
+
+# run server (starting in venv/app)
+flask run
+
+# test all
+# stop server
+
+# copy app/app/views.py
+# to app/app/admin_views.py
+
+# create requirements.txt 
+# in app/
+ls
+# app          run.py                  venv
+
+pip freeze > requirements.txt
+#check requirements.txt content:
+# click==7.1.2
+# Flask==1.1.2
+# itsdangerous==1.1.0
+# Jinja2==2.11.2
+# MarkupSafe==1.1.1
+# Werkzeug==1.0.1
+
+# in future:
+pip install -r requirements.txt
+# (now all is yet installed, so)
+# Requirement already satisfied: click==7.1.2 in ./venv/lib/python3.8/site-packages (from -r requirements.txt (line 1)) (7.1.2)
+# Requirement already satisfied: Flask==1.1.2 in ./venv/lib/python3.8/site-packages (from -r requirements.txt (line 2)) (1.1.2)
+# Requirement already satisfied: itsdangerous==1.1.0 in ./venv/lib/python3.8/site-packages (from -r requirements.txt (line 3)) (1.1.0)
+# Requirement already satisfied: Jinja2==2.11.2 in ./venv/lib/python3.8/site-packages (from -r requirements.txt (line 4)) (2.11.2)
+# Requirement already satisfied: MarkupSafe==1.1.1 in ./venv/lib/python3.8/site-packages (from -r requirements.txt (line 5)) (1.1.1)
+# Requirement already satisfied: Werkzeug==1.0.1 in ./venv/lib/python3.8/site-packages (from -r requirements.txt (line 6)) (1.0.1)
+
+# quit virtual env
+# deactivate

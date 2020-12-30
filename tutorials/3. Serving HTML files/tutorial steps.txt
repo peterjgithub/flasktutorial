@@ -1,0 +1,19 @@
+# Pythonise Tutorial:
+# Serving HTML files | Learning Flask Ep. 3
+# https://pythonise.com/series/learning-flask/rendering-html-files-with-flask
+# https://www.youtube.com/watch?v=GMppyAPbLYk
+
+# activate the environment:
+source venv/bin/activate
+
+# start visual code
+code .
+
+# run server
+flask run
+
+# stop server
+# press ctrl + c
+
+# quit virtual env
+# deactivate
