@@ -1,7 +1,7 @@
 # Pythonise Tutorial:
-# Serving static files | Learning Flask Ep. 4
-# https://pythonise.com/series/learning-flask/serving-static-files-with-flask
-# https://www.youtube.com/watch?v=GxT0zgZSHE8&list=PLF2JzgCW6-YY_TZCmBrbOpgx5pSNBD0_L&index=4
+# Jinja template inheritance | Learning Flask Ep. 5
+# https://pythonise.com/series/learning-flask/jinja-template-inheritance
+# https://www.youtube.com/watch?v=pj1iLRljwxI&list=PLF2JzgCW6-YY_TZCmBrbOpgx5pSNBD0_L&index=5
 
 # activate the environment:
 source venv/bin/activate
