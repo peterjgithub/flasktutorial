@@ -1,7 +1,7 @@
 # Pythonise Tutorial:
-# Jinja template inheritance | Learning Flask Ep. 5
-# https://pythonise.com/series/learning-flask/jinja-template-inheritance
-# https://www.youtube.com/watch?v=pj1iLRljwxI&list=PLF2JzgCW6-YY_TZCmBrbOpgx5pSNBD0_L&index=5
+# Jinja template design | Learning Flask Ep. 6
+# https://pythonise.com/series/learning-flask/jinja-template-design
+# https://www.youtube.com/watch?v=mqrbF0qGSLI&list=PLF2JzgCW6-YY_TZCmBrbOpgx5pSNBD0_L&index=6
 
 # activate the environment:
 source venv/bin/activate
@@ -9,7 +9,14 @@ source venv/bin/activate
 # start visual code
 code .
 
-# run server
+# check environment variables
+printenv 
+
+# add flask environment variables
+export FLASK_APP=app.py
+export FLASK_ENV=development
+
+# run our flask app server
 flask run
 
 # stop server
