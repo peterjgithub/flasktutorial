@@ -1,0 +1,52 @@
+https://thomas-cokelaer.info/tutorials/python/data_structures.html
+https://www.w3schools.com/python/python_tuples.asp
+https://www.w3schools.com/python/python_lists.asp
+https://www.w3schools.com/python/python_sets.asp
+https://www.w3schools.com/python/python_dictionaries.asp
+
+
+
+1. Python default Collections
+*****************************
+List tuple set Dictionary
+
+Allows DUPLICATEs:
+-----------------
+
+Tuple unCHANGEABLE  
+is a collection which is ORDERED and unCHANGEABLE. Allows DUPLICATE members.
+thistuple = ("apple", "banana", "cherry", "apple", "cherry")
+
+List CHANGEABLE  
+is a collection which is ORDERED and CHANGEABLE. Allows DUPLICATE members.
+mylist = ["apple", "banana", "cherry", "apple", "cherry"]
+
+
+NO-DUPLICATE:
+------------
+
+Set unCHANGEABLE 
+is a collection which is unORDERED and unindexed. NO-DUPLICATE members.
+thisset = {"apple", "banana", "cherry", "apple"}
+print(thisset) => {"apple", "banana", "cherry"}
+ 
+Dictionary CHANGEABLE  
+is a collection which is unORDERED and CHANGEABLE. NO-DUPLICATE members.
+thisdict = {
+  "brand": "Ford",
+  "electric": False,
+  "year": 1964,
+  "colors": ["red", "white", "blue"]
+}
+
+
+2. Numpy arrays
+***************
+>  Your data is 2-dimensional (or higher)
+> numerical/mathematical calculations
+
+
+3. Pandas series / dataframes
+*****************************
+> merge multiple data sets
+> import data from or export data
