@@ -1,11 +1,8 @@
 from app import app
 
-from flask import render_template, request, redirect, jsonify, make_response
+from flask import render_template, request, redirect
 
 from datetime import datetime
-
-# List of HTTP status codes:
-# https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
 
 
 @app.template_filter("clean_date")
@@ -95,25 +92,23 @@ def sign_up():
 
     return render_template('public/signup.html')
 
-
 users = {
-    "mitsuhiko": {
+    "mitsuhiko" : {
         "name": "Armin Ronacher",
         "bio": "Creator of the Flask Framework",
         "twitter_handle": "@mitchuhiko"
     },
-    "gvanrossum": {
+        "gvanrossum" : {
         "name": "Guido Van Rossum",
         "bio": "Creator of the Python programming language",
         "twitter_handle": "@gvanrossum"
     },
-    "elonmusk": {
+        "elonmusk" : {
         "name": "Elon Musk",
         "bio": "technology entrepreneur, investor and engineer",
         "twitter_handle": "@elonmusk"
     }
 }
-
 
 @app.route('/profile/<username>')
 def profile(username):
@@ -125,32 +120,6 @@ def profile(username):
 
     return render_template('public/profile.html', username=username, user=user)
 
-
 @app.route('/multiple/<foo>/<bar>/<baz>')
 def multi(foo, bar, baz):
     return f"foo is {foo}, bar is {bar}, baz is {baz}"
-
-
-@app.route('/json', methods=["POST"])
-def json():
-
-    if request.is_json:
-        req = request.get_json()
-
-        response = {
-            "message": "JSON received",
-            "name": req.get("name")
-        }
-
-        res = make_response(jsonify(response), 200)
-
-        return res
-
-    else:
-
-        response = {
-            "message": "No JSON received"
-        }
-        res = make_response(jsonify(response), 400)
-
-        return res

@@ -2,9 +2,8 @@
 set -x
 
 # Pythonise Tutorial:
-# Jinja template design | Learning Flask Ep. 6
-open -a "Google Chrome" https://pythonise.com/series/learning-flask/jinja-template-design
-open -a "Google Chrome" https://www.youtube.com/watch?v=mqrbF0qGSLI&list=PLF2JzgCW6-YY_TZCmBrbOpgx5pSNBD0_L&index=6
+# Forms with Flask - Python on the web - Learning Flask Series Pt 7
+open -a "Google Chrome" https://www.youtube.com/watch?v=ap2vxzAZVIg&list=PLF2JzgCW6-YY_TZCmBrbOpgx5pSNBD0_L&index=7
 
 # DEV start (if manual):
 # in this folder (/Users/peter/GitHub/flasktutorial)
@@ -31,6 +30,9 @@ new /Users/peter/GitHub/flasktutorial/app
 
 # run our flask app server
 flask run
+
+# open Flask app (tutorial)
+open -a "Google Chrome" http://127.0.0.1:5000
 
 # stop server
 # press ctrl + c
